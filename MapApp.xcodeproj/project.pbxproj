@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17C6FE1A09894E0015BD76 /* Reminder.swift */; };
 		EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B991A08250C00139F20 /* AppDelegate.swift */; };
 		EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B9B1A08250C00139F20 /* MapApp.xcdatamodeld */; };
-		EBCB8B9F1A08250C00139F20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B9E1A08250C00139F20 /* ViewController.swift */; };
 		EBCB8BA21A08250C00139F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB8BA01A08250C00139F20 /* Main.storyboard */; };
 		EBCB8BA41A08250C00139F20 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBCB8BA31A08250C00139F20 /* Images.xcassets */; };
 		EBCB8BA71A08250C00139F20 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBCB8BA51A08250C00139F20 /* LaunchScreen.xib */; };
 		EBCB8BB31A08250C00139F20 /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8BB21A08250C00139F20 /* MapAppTests.swift */; };
+		EBCB8BBD1A08259A00139F20 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8BBC1A08259A00139F20 /* MapViewController.swift */; };
+		EBCB8BC51A083D1500139F20 /* RegionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8BC41A083D1500139F20 /* RegionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +29,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EB17C6FE1A09894E0015BD76 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		EBCB8B941A08250C00139F20 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB8B981A08250C00139F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBCB8B991A08250C00139F20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBCB8B9C1A08250C00139F20 /* MapApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MapApp.xcdatamodel; sourceTree = "<group>"; };
-		EBCB8B9E1A08250C00139F20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBCB8BA11A08250C00139F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBCB8BA31A08250C00139F20 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EBCB8BA61A08250C00139F20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EBCB8BAC1A08250C00139F20 /* MapAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB8BB11A08250C00139F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBCB8BB21A08250C00139F20 /* MapAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppTests.swift; sourceTree = "<group>"; };
+		EBCB8BBC1A08259A00139F20 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EBCB8BC41A083D1500139F20 /* RegionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegionViewController.swift; path = ../RegionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB17C6FD1A0989100015BD76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB17C6FE1A09894E0015BD76 /* Reminder.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EBCB8B8B1A08250C00139F20 = {
 			isa = PBXGroup;
 			children = (
@@ -80,10 +92,10 @@
 			isa = PBXGroup;
 			children = (
 				EBCB8B991A08250C00139F20 /* AppDelegate.swift */,
-				EBCB8B9E1A08250C00139F20 /* ViewController.swift */,
-				EBCB8BA01A08250C00139F20 /* Main.storyboard */,
+				EB17C6FD1A0989100015BD76 /* Model */,
+				EBCB8BBF1A0825AC00139F20 /* View */,
+				EBCB8BBE1A0825A100139F20 /* Controller */,
 				EBCB8BA31A08250C00139F20 /* Images.xcassets */,
-				EBCB8BA51A08250C00139F20 /* LaunchScreen.xib */,
 				EBCB8B9B1A08250C00139F20 /* MapApp.xcdatamodeld */,
 				EBCB8B971A08250C00139F20 /* Supporting Files */,
 			);
@@ -113,6 +125,24 @@
 				EBCB8BB11A08250C00139F20 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBCB8BBE1A0825A100139F20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB8BC41A083D1500139F20 /* RegionViewController.swift */,
+				EBCB8BBC1A08259A00139F20 /* MapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EBCB8BBF1A0825AC00139F20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB8BA51A08250C00139F20 /* LaunchScreen.xib */,
+				EBCB8BA01A08250C00139F20 /* Main.storyboard */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBCB8B9F1A08250C00139F20 /* ViewController.swift in Sources */,
+				EBCB8BC51A083D1500139F20 /* RegionViewController.swift in Sources */,
 				EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */,
+				EBCB8BBD1A08259A00139F20 /* MapViewController.swift in Sources */,
 				EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */,
+				EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +443,7 @@
 				EBCB8BB81A08250C00139F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBCB8BB91A08250C00139F20 /* Build configuration list for PBXNativeTarget "MapAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +452,7 @@
 				EBCB8BBB1A08250C00139F20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
