@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17C6FE1A09894E0015BD76 /* Reminder.swift */; };
+		EB353F651A0ACB380025C0DD /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */; };
+		EB353F671A0AD1330025C0DD /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */; };
+		EB353F691A0AD1520025C0DD /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */; };
 		EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B991A08250C00139F20 /* AppDelegate.swift */; };
 		EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B9B1A08250C00139F20 /* MapApp.xcdatamodeld */; };
 		EBCB8BA21A08250C00139F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB8BA01A08250C00139F20 /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 
 /* Begin PBXFileReference section */
 		EB17C6FE1A09894E0015BD76 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
 		EBCB8B941A08250C00139F20 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB8B981A08250C00139F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBCB8B991A08250C00139F20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				EBCB8BC41A083D1500139F20 /* RegionViewController.swift */,
+				EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */,
+				EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */,
 				EBCB8BBC1A08259A00139F20 /* MapViewController.swift */,
 			);
 			name = Controller;
@@ -141,6 +149,7 @@
 			children = (
 				EBCB8BA51A08250C00139F20 /* LaunchScreen.xib */,
 				EBCB8BA01A08250C00139F20 /* Main.storyboard */,
+				EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				EBCB8BA21A08250C00139F20 /* Main.storyboard in Resources */,
 				EBCB8BA71A08250C00139F20 /* LaunchScreen.xib in Resources */,
 				EBCB8BA41A08250C00139F20 /* Images.xcassets in Resources */,
+				EB353F691A0AD1520025C0DD /* ReminderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +257,11 @@
 			files = (
 				EBCB8BC51A083D1500139F20 /* RegionViewController.swift in Sources */,
 				EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */,
+				EB353F671A0AD1330025C0DD /* ReminderTableViewCell.swift in Sources */,
 				EBCB8BBD1A08259A00139F20 /* MapViewController.swift in Sources */,
 				EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */,
 				EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */,
+				EB353F651A0ACB380025C0DD /* ReminderTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

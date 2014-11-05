@@ -12,7 +12,7 @@ import CoreData
 class Reminder: NSManagedObject {
 
     @NSManaged var name: String
-    @NSManaged var date: String
+    @NSManaged var date: NSDate
     @NSManaged var radius: NSNumber
     @NSManaged var coordinate: String
 
