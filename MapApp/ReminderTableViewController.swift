@@ -34,6 +34,8 @@ class ReminderTableViewController: UIViewController, UITableViewDataSource, NSFe
             println("Error: \(error?.description)")
         }
         
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "didGetCloudChanges:", name: NSPersistentStoreDidImportUbiquitousContentChangesNotification, object: appDelegate.persistentStoreCoordinator)
+        
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -54,5 +56,9 @@ class ReminderTableViewController: UIViewController, UITableViewDataSource, NSFe
     
     func controllerDidChangeContent(controller: NSFetchedResultsController) {
         self.tableView.reloadData()
+    }
+    
+    func didGetCloudChanges(notification: NSNotification) {
+        self.managedObjectContext.mergeChangesFromContextDidSaveNotification(notification)
     }
 }

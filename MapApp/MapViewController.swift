@@ -13,6 +13,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
     @IBOutlet weak var mapView: MKMapView!
     let locationManager = CLLocationManager()
+    var notification = UILocalNotification()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         let longPress = UILongPressGestureRecognizer(target: self, action: "didLongPressOnMap:")
         self.mapView.addGestureRecognizer(longPress)
+        
+        self.notification.fireDate = nil
+        self.notification.alertBody = "Entered region"
+        self.notification.alertAction = "AlertAction"
     }
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
@@ -104,4 +109,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         regionVC.selectedAnnotation = view.annotation
         self.presentViewController(regionVC, animated: true, completion: nil)
     }
+    
+    
 }
