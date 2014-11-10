@@ -26,10 +26,13 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         let longPress = UILongPressGestureRecognizer(target: self, action: "didLongPressOnMap:")
         self.mapView.addGestureRecognizer(longPress)
-        
+    }
+    
+    func locationManager(manager: CLLocationManager!, didEnterRegion region: CLRegion!) {
         self.notification.fireDate = nil
         self.notification.alertBody = "Entered region"
         self.notification.alertAction = "AlertAction"
+        UIApplication.sharedApplication().presentLocalNotificationNow(self.notification)
     }
     
     func mapView(mapView: MKMapView!, rendererForOverlay overlay: MKOverlay!) -> MKOverlayRenderer! {
@@ -42,6 +45,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func reminderAdded(notification: NSNotification) {
         let geoRegion = notification.userInfo!["region"] as CLCircularRegion
+        println(geoRegion.center.latitude)
+        println(geoRegion.center.longitude)
         let overlay = MKCircle(centerCoordinate: geoRegion.center, radius: geoRegion.radius)
         self.mapView.addOverlay(overlay)
     }
