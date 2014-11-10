@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB17C6FE1A09894E0015BD76 /* Reminder.swift */; };
+		EB1969781A0F18AA00D99FFF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1969771A0F18AA00D99FFF /* MapKit.framework */; };
+		EB19697B1A0F190E00D99FFF /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB19697A1A0F190E00D99FFF /* CloudKit.framework */; };
+		EB353F651A0ACB380025C0DD /* ReminderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */; };
+		EB353F671A0AD1330025C0DD /* ReminderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */; };
+		EB353F691A0AD1520025C0DD /* ReminderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */; };
 		EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B991A08250C00139F20 /* AppDelegate.swift */; };
 		EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBCB8B9B1A08250C00139F20 /* MapApp.xcdatamodeld */; };
 		EBCB8BA21A08250C00139F20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBCB8BA01A08250C00139F20 /* Main.storyboard */; };
@@ -30,6 +35,12 @@
 
 /* Begin PBXFileReference section */
 		EB17C6FE1A09894E0015BD76 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		EB1969771A0F18AA00D99FFF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EB1969791A0F18C700D99FFF /* MapApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MapApp.entitlements; sourceTree = "<group>"; };
+		EB19697A1A0F190E00D99FFF /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewController.swift; sourceTree = "<group>"; };
+		EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderTableViewCell.swift; sourceTree = "<group>"; };
+		EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReminderTableViewCell.xib; sourceTree = "<group>"; };
 		EBCB8B941A08250C00139F20 /* MapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBCB8B981A08250C00139F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBCB8B991A08250C00139F20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1969781A0F18AA00D99FFF /* MapKit.framework in Frameworks */,
+				EB19697B1A0F190E00D99FFF /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,8 @@
 		EBCB8B8B1A08250C00139F20 = {
 			isa = PBXGroup;
 			children = (
+				EB19697A1A0F190E00D99FFF /* CloudKit.framework */,
+				EB1969771A0F18AA00D99FFF /* MapKit.framework */,
 				EBCB8B961A08250C00139F20 /* MapApp */,
 				EBCB8BAF1A08250C00139F20 /* MapAppTests */,
 				EBCB8B951A08250C00139F20 /* Products */,
@@ -91,6 +106,7 @@
 		EBCB8B961A08250C00139F20 /* MapApp */ = {
 			isa = PBXGroup;
 			children = (
+				EB1969791A0F18C700D99FFF /* MapApp.entitlements */,
 				EBCB8B991A08250C00139F20 /* AppDelegate.swift */,
 				EB17C6FD1A0989100015BD76 /* Model */,
 				EBCB8BBF1A0825AC00139F20 /* View */,
@@ -131,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				EBCB8BC41A083D1500139F20 /* RegionViewController.swift */,
+				EB353F661A0AD1330025C0DD /* ReminderTableViewCell.swift */,
+				EB353F641A0ACB380025C0DD /* ReminderTableViewController.swift */,
 				EBCB8BBC1A08259A00139F20 /* MapViewController.swift */,
 			);
 			name = Controller;
@@ -141,6 +159,7 @@
 			children = (
 				EBCB8BA51A08250C00139F20 /* LaunchScreen.xib */,
 				EBCB8BA01A08250C00139F20 /* Main.storyboard */,
+				EB353F681A0AD1520025C0DD /* ReminderTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -194,6 +213,15 @@
 				TargetAttributes = {
 					EBCB8B931A08250C00139F20 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = GBG956P6A4;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					EBCB8BAB1A08250C00139F20 = {
 						CreatedOnToolsVersion = 6.1;
@@ -228,6 +256,7 @@
 				EBCB8BA21A08250C00139F20 /* Main.storyboard in Resources */,
 				EBCB8BA71A08250C00139F20 /* LaunchScreen.xib in Resources */,
 				EBCB8BA41A08250C00139F20 /* Images.xcassets in Resources */,
+				EB353F691A0AD1520025C0DD /* ReminderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +276,11 @@
 			files = (
 				EBCB8BC51A083D1500139F20 /* RegionViewController.swift in Sources */,
 				EBCB8B9D1A08250C00139F20 /* MapApp.xcdatamodeld in Sources */,
+				EB353F671A0AD1330025C0DD /* ReminderTableViewCell.swift in Sources */,
 				EBCB8BBD1A08259A00139F20 /* MapViewController.swift in Sources */,
 				EBCB8B9A1A08250C00139F20 /* AppDelegate.swift in Sources */,
 				EB17C6FF1A09894E0015BD76 /* Reminder.swift in Sources */,
+				EB353F651A0ACB380025C0DD /* ReminderTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,9 +405,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MapApp/MapApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -384,9 +420,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MapApp/MapApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
